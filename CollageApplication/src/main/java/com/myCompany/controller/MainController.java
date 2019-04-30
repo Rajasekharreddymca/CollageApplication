@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
 public class MainController {
-	
 	@GetMapping("/welcome")
 	public String sayHello(ModelMap model) {
 		model.addAttribute("greeting", "Hello World from Spring 4 MVC");
