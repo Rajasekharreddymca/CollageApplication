@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,34 +10,44 @@
 </head>
 <body>
 	<h1>Student Register Form</h1>
-	<form action="registerusr" method="post">
+	${msg}
+<!-- 	
+	private String fName;
+	private String lName;
+	private String uName;
+	private String pwd;
+	private long phno;
+	private String addr; -->
+	
+	
+	<form:form modelAttribute="regusercmd"  method="post">
 		<table style="with: 50%">
 			<tr>
 				<td>First Name</td>
-				<td><input type="text" name="first_name" /></td>
+				<td><form:input   path="fName" /></td>
 			</tr>
 			<tr>
 				<td>Last Name</td>
-				<td><input type="text" name="last_name" /></td>
+				<td><form:input   path="lName" /></td>
 			</tr>
 			<tr>
 				<td>UserName</td>
-				<td><input type="text" name="username" /></td>
+				<td><form:input   path="uName" /></td>
 			</tr>
 			<tr>
 				<td>Password</td>
-				<td><input type="password" name="password" /></td>
+				<td><form:password   path="pwd" /></td>
 			</tr>
 			<tr>
 				<td>Address</td>
-				<td><input type="text" name="address" /></td>
+				<td><form:input  path="addr" /></td>
 			</tr>
 			<tr>
 				<td>Contact No</td>
-				<td><input type="text" name="contact" /></td>
+				<td><form:input   path="phno" /></td>
 			</tr>
 		</table>
 		<input type="submit" value="Register" />
-	</form>
+	</form:form>
 </body>
 </html>

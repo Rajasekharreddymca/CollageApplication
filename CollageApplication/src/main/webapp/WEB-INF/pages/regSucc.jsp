@@ -12,7 +12,7 @@
 succ registerd
 
 
-<a href="login"><button>login</button></a>
+
 
 </body>
 </html>

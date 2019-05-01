@@ -3,6 +3,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style type="text/css">
+body {
+	background-image: url('https://cdn.crunchify.com/bg.png');
+}
+</style>
 <meta charset="ISO-8859-1">
 <title>Welcome Page </title>
 </head>
