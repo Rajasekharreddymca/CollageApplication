@@ -8,12 +8,12 @@ public class MyInitializer extends AbstractAnnotationConfigDispatcherServletInit
 
 	@Override
 	protected Class<?>[] getRootConfigClasses() {
-		return new Class[] { WebMVCConfig.class };
+		return new Class[] {PersistanceConfig.class  };
 	}
 
 	@Override
 	protected Class<?>[] getServletConfigClasses() {
-		return new Class[] { PersistanceConfig.class};
+		return new Class[] { WebMVCConfig.class};
 	}
 
 	@Override

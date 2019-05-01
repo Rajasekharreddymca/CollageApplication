@@ -4,14 +4,9 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Welcome Page </title>
+<title>Insert title here</title>
 </head>
 <body>
-<h1>Welcome Page Coming Soon....</h1>
-<br>
-<br>
-<a href="login"><button>login</button></a>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="sinup"><button>register</button></a>
+logged in successfully 
 </body>
 </html>
