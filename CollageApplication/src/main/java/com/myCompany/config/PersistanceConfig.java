@@ -21,7 +21,7 @@ public class PersistanceConfig {
 		ds = new HikariDataSource();
 		ds.setUsername("system");
 		ds.setJdbcUrl("jdbc:oracle:thin:@localhost:1521:xe");
-		ds.setPassword("manager");
+		ds.setPassword("tiger");
 		ds.setDriverClassName("oracle.jdbc.driver.OracleDriver");
 		return ds;
 	}

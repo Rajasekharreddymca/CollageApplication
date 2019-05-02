@@ -1,0 +1,19 @@
+ create table Studentinfotab (stuid number(10) primary key,stufname varchar2(27),stulastname varchar2(25),stuusername varchar2(20) ,password varchar2(20) , phoneno number(15) ,stuaddress varchar2(50) )
+ 
+ 
+ 
+  DESC Studentinfotab ;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ STUID                                     NOT NULL NUMBER(10)
+ STUFNAME                                           VARCHAR2(27)
+ STULASTNAME                                        VARCHAR2(25)
+ STUUSERNAME                                        VARCHAR2(20)
+ PASSWORD                                           VARCHAR2(20)
+ PHONENO                                            NUMBER(15)
+ STUADDRESS                                         VARCHAR2(50)
+ 
+ 
+  create sequence stuidseq start with 100 increment by 1;
+
+Sequence created.

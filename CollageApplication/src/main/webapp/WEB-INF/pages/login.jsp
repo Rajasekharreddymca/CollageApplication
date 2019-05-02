@@ -16,3 +16,6 @@
 		</table>
 			<input type="submit" value="Login" />
 	</form:form>
+
+	
+	<center>${result}</center>
