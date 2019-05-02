@@ -7,9 +7,14 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
+<style type="text/css">
+body {
+	background-image: url('https://cdn.crunchify.com/bg.png');
+}
+</style>
 </head>
-<body bgcolor="cyan">
-	<h1>Student Register Form</h1>
+<body >
+	<h1 style="color: blue;text-align: center">Student Register Form</h1>
 	${msg}
 <!-- 	
 	private String fName;
@@ -18,7 +23,7 @@
 	private String pwd;
 	private long phno;
 	private String addr; -->
-	
+	<center>
 	
 	<form:form modelAttribute="regusercmd"  method="post">
 		<table style="with: 50%">
@@ -50,7 +55,7 @@
 		<input type="submit" value="Register" />
 	</form:form>
 	
-	
+	</center>
 	<br><br>
 	<h1 style="color: blue;text-align: center">${result}</h1>
 	

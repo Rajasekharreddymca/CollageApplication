@@ -42,7 +42,9 @@ public class MainController {
 		BeanUtils.copyProperties(cmd,dto);
 		System.out.println(dto);
 		result=service.insertData(dto);
+		map.put("result", result);
 		System.out.println(result);
+		
 		return "register";
 		
 	}
