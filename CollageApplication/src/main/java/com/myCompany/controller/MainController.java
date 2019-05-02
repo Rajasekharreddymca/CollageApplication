@@ -44,7 +44,6 @@ public class MainController {
 		result=service.insertData(dto);
 		map.put("result", result);		
 		return "register";
-		
 	}
 
 	@GetMapping("/login")
