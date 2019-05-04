@@ -19,6 +19,7 @@ public class LoginServiceImpl implements LoginService {
 
 	@Override
 	public Boolean validUser(StudentDTO stuDto) {
+		System.out.println("LoginServiceImpl.validUser()");
 		StudentBo bo = null;
 		bo = new StudentBo();
 		BeanUtils.copyProperties(stuDto, bo);
